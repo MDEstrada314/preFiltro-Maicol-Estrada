@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 // core components
@@ -24,26 +25,39 @@ import CallToAction from "../../components/call-to-action/CallToAction"
 
 
 const Components = () => {
+    const [data, setData] = useState([]);
+    const apiUrl = 'http://localhost:9000/api'; 
+
+    useEffect(() => {
+        fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            setData(data);
+        })
+        .catch((error) => {
+            console.error('Error al obtener datos de la API:', error);
+        });
+    }, [apiUrl]);
+
     return (
         <div id="main-wrapper">
             <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBanner />
-                   {/*  <Buttons /> */}
-                   {/*  <Labels /> */}
-                    {/* <PagePagination /> */}
-                  {/*   <Images /> */}
-                   {/*  <Breadcrumbs /> */}
-                   {/*  <Cards /> */}
-                   {/*  <Dropdowns /> */}
-                   {/*  <PageForm /> */}
-                   {/*  <PageTable /> */}
-                    {/* <Notification /> */}
-                   {/*  <TooltipPopover /> */}
-                 {/*    <Typography /> */}
-                  {/*   <JsComponents /> */}
-                    <CallToAction />
+                    {data && data.length > 0 ? (
+                        data.map((item) => (
+                            <CallToAction
+                                key={item._id}
+                                backgroundImagen={item.imagen}
+                                title={item.Nombre}
+                                subtitle={item.frases[0]}
+                                buttonText={item._id}
+                            />
+                        ))
+                    ) : (
+                        <p>Cargando datos...</p>
+                    )}
                 </div>
             </div>
             <Footer />
@@ -56,3 +70,21 @@ Components.propTypes = {
 };
 
 export default Components;
+
+
+
+
+
+   {/*  <Buttons /> */}
+                   {/*  <Labels /> */}
+                    {/* <PagePagination /> */}
+                  {/*   <Images /> */}
+                   {/*  <Breadcrumbs /> */}
+                   {/*  <Cards /> */}
+                   {/*  <Dropdowns /> */}
+                   {/*  <PageForm /> */}
+                   {/*  <PageTable /> */}
+                    {/* <Notification /> */}
+                   {/*  <TooltipPopover /> */}
+                 {/*    <Typography /> */}
+                  {/*   <JsComponents /> */}

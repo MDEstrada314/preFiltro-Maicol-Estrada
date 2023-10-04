@@ -26,7 +26,7 @@ const CustomComponents = () => {
             <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
-                   {/*  <HeaderBanner2 /> */}
+                    <HeaderBanner2 />
                    {/*  <HeaderComponent /> */}
                   {/*   <BannerComponent /> */}
                   {/*   <FormBannerComponent /> */}
@@ -37,7 +37,7 @@ const CustomComponents = () => {
                     {/* <TestimonialComponent /> */}
              {/*        <BlogComponent /> */}
                  {/*    <C2aComponent /> */}
-                  {/*   <ContactComponent /> */}
+                    <ContactComponent />
                 {/*     <CallToAction /> */}
                 </div>
             </div>
