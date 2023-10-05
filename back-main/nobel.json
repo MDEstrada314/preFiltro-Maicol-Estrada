@@ -1,0 +1,72 @@
+[
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9b5"
+    },
+    "titulo": "Física y Química",
+    "año": "1903 (Física) y 1911 (Química)"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9b6"
+    },
+    "titulo": "Paz",
+    "año": "1964"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9b7"
+    },
+    "titulo": "Física",
+    "año": "1921"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9b8"
+    },
+    "titulo": "Medicina",
+    "año": "1962"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9b9"
+    },
+    "titulo": "Literatura",
+    "año": "Sartre rechazó el Nobel de Literatura en 1964"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9ba"
+    },
+    "titulo": "Medicina",
+    "año": "1945"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9bb"
+    },
+    "titulo": "Medicina",
+    "año": "1946"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9bc"
+    },
+    "titulo": "Literatura",
+    "año": "1970"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9bd"
+    },
+    "titulo": "Paz",
+    "año": "1917, 1944 y 1963"
+  },
+  {
+    "ganador": {
+      "$oid": "651c4f6d4cfab6af1b32f9be"
+    },
+    "titulo": "Paz",
+    "año": "1993"
+  }
+]

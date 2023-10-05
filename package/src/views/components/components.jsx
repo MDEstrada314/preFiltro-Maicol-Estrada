@@ -26,50 +26,55 @@ import CallToAction from "../../components/call-to-action/CallToAction"
 
 const Components = () => {
     const [data, setData] = useState([]);
-    const apiUrl = 'http://localhost:9000/api'; 
-
+    const apiUrl = "http://localhost:9000/nobel"; // Actualiza la URL de la API
+  
     useEffect(() => {
-        fetch(apiUrl)
-        .then((response) => response.json())
+      fetch(apiUrl)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Error al obtener datos de la API");
+          }
+          return response.json();
+        })
         .then((data) => {
-            setData(data);
+          setData(data.alquiler);
         })
         .catch((error) => {
-            console.error('Error al obtener datos de la API:', error);
+          console.error("Error al obtener datos de la API:", error);
         });
     }, [apiUrl]);
-
+  
     return (
-        <div id="main-wrapper">
-            <Header />
-            <div className="page-wrapper">
-                <div className="container-fluid">
-                    <HeaderBanner />
-                    {data && data.length > 0 ? (
-                        data.map((item) => (
-                            <CallToAction
-                                key={item._id}
-                                backgroundImagen={item.imagen}
-                                title={item.Nombre}
-                                subtitle={item.frases[0]}
-                                buttonText={item._id}
-                            />
-                        ))
-                    ) : (
-                        <p>Cargando datos...</p>
-                    )}
-                </div>
-            </div>
-            <Footer />
+      <div id="main-wrapper">
+        <Header />
+        <div className="page-wrapper">
+          <div className="container-fluid">
+            <HeaderBanner />
+            {data && data.length > 0 ? (
+              data.map((item) => (
+                <CallToAction
+                  key={item._id}
+                  backgroundImagen={item.ganador.imagen}
+                  title={item.ganador.Nombre}
+                  subtitle={item.ganador.frases[0]}
+                  buttonText={item.titulo}
+                />
+              ))
+            ) : (
+              <p>Cargando datos...</p>
+            )}
+          </div>
         </div>
+        <Footer />
+      </div>
     );
-}
-
-Components.propTypes = {
-    classes: PropTypes.object
-};
-
-export default Components;
+  };
+  
+  Components.propTypes = {
+    classes: PropTypes.object,
+  };
+  
+  export default Components;
 
 
 

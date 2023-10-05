@@ -10,6 +10,9 @@ import {
 } from "react-router-dom";
 import Components from "./views/components/components.jsx";
 import CustomComponents from "./views/custom-components/custom-components.jsx";
+import CardNobel from "./views/card-components/card-components.jsx";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,6 +21,7 @@ root.render(
   <HashRouter history={hist}>
     <Routes>
       <Route path="/custom-components" element={<CustomComponents />} />
+      <Route path="/card-components" element={<CardNobel />} />
       <Route path="/" element={<Components />} />
     </Routes>
   </HashRouter>

@@ -1,0 +1,162 @@
+[{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9b5"
+  },
+  "Nombre": "Marie Curie",
+  "imagen": "imagen_curie.jpg",
+  "imagen2": "imagen2_curie.jpg",
+  "estado": true,
+  "fecha Nacimiento": "7 de noviembre de 1867",
+  "pais": "Polonia",
+  "invencion": "Radiactividad",
+  "frases": [
+    "La vida no es fácil para ninguno de nosotros. Pero... ¡Qué importa! Hay que perseverar y, sobre todo, tener confianza en uno mismo."
+  ],
+  "genero": "Femenino",
+  "biografia": "Marie Curie fue una científica pionera en el campo de la radiactividad. Nació en Polonia en 1867 y se trasladó a Francia, donde realizó investigaciones pioneras sobre radiactividad y descubrió los elementos polonio y radio. Ganó dos premios Nobel en su vida, el primero en 1903 en Física por su trabajo en radiactividad y el segundo en 1911 en Química por sus investigaciones sobre radio y polonio. Su dedicación a la ciencia y su valentía al enfrentar los desafíos de la investigación la convirtieron en una figura icónica de la ciencia."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9b6"
+  },
+  "Nombre": "Martin Luther King Jr.",
+  "imagen": "imagen_king.jpg",
+  "imagen2": "imagen2_king.jpg",
+  "estado": true,
+  "fecha Nacimiento": "15 de enero de 1929",
+  "pais": "Estados Unidos",
+  "invencion": "Movimiento por los derechos civiles",
+  "frases": [
+    "Tengo un sueño que mis cuatro pequeños hijos vivirán un día en una nación en la que no serán juzgados por el color de su piel, sino por el contenido de su carácter."
+  ],
+  "genero": "Masculino",
+  "biografia": "Martin Luther King Jr. fue un líder de los derechos civiles en Estados Unidos en la década de 1950 y 1960. Nació en 1929 y se convirtió en un defensor incansable de la igualdad de derechos para los afroamericanos. Ganó el Premio Nobel de la Paz en 1964 por su liderazgo no violento en la lucha contra la segregación racial y la discriminación. Su famoso discurso 'Tengo un sueño' sigue siendo un símbolo de la lucha por la igualdad y la justicia en todo el mundo."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9b7"
+  },
+  "Nombre": "Albert Einstein",
+  "imagen": "imagen_einstein.jpg",
+  "imagen2": "imagen2_einstein.jpg",
+  "estado": true,
+  "fecha Nacimiento": "14 de marzo de 1879",
+  "pais": "Alemania",
+  "invencion": "Teoría de la relatividad",
+  "frases": [
+    "La imaginación es más importante que el conocimiento.",
+    "Dios no juega a los dados con el universo."
+  ],
+  "genero": "Masculino",
+  "biografia": "Albert Einstein, nacido en Alemania en 1879, fue uno de los científicos más influyentes de la historia. Ganó el Premio Nobel de Física en 1921 por su explicación del efecto fotoeléctrico, que sentó las bases de la mecánica cuántica. Sin embargo, es más conocido por su teoría de la relatividad, que revolucionó nuestra comprensión del espacio, el tiempo y la gravedad. Su ecuación E=mc^2 es famosa en todo el mundo y cambió la física moderna."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9b8"
+  },
+  "Nombre": "Francis Crick, James Watson y Maurice Wilkins",
+  "imagen": "imagen_crick_watson_wilkins.jpg",
+  "imagen2": "imagen2_crick_watson_wilkins.jpg",
+  "estado": true,
+  "fecha Nacimiento": "8 de junio de 1916, 6 de abril de 1928 y 15 de diciembre de 1916",
+  "pais": "Reino Unido",
+  "invencion": "Descubrimiento de la estructura del ADN",
+  "frases": [
+    "El ADN es la molécula de la vida."
+  ],
+  "genero": "Masculino",
+  "biografia": "Francis Crick, James Watson y Maurice Wilkins fueron científicos británicos que desempeñaron un papel fundamental en el descubrimiento de la estructura del ADN. En 1953, Crick y Watson desarrollaron el famoso modelo de la doble hélice del ADN, una de las mayores revelaciones en la biología. Maurice Wilkins contribuyó al descubrimiento al proporcionar datos de difracción de rayos X sobre el ADN. Por su trabajo pionero, estos científicos compartieron el Premio Nobel de Medicina en 1962."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9b9"
+  },
+  "Nombre": "Jean-Paul Sartre",
+  "imagen": "imagen_sartre.jpg",
+  "imagen2": "imagen2_sartre.jpg",
+  "estado": true,
+  "fecha Nacimiento": "21 de junio de 1905",
+  "pais": "Francia",
+  "invencion": "Existencialismo",
+  "frases": [
+    "El hombre está condenado a ser libre."
+  ],
+  "genero": "Masculino",
+  "biografia": "Jean-Paul Sartre, nacido en Francia en 1905, fue un filósofo y escritor influyente en el movimiento existencialista. Su obra exploró temas como la libertad, la responsabilidad y la existencia humana. Sartre rechazó el Premio Nobel de Literatura en 1964, pero su influencia en la filosofía y la literatura moderna es innegable. Sus obras, como 'El ser y la nada', siguen siendo estudiadas y discutidas en todo el mundo."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9ba"
+  },
+  "Nombre": "Sir Alexander Fleming",
+  "imagen": "imagen_fleming.jpg",
+  "imagen2": "imagen2_fleming.jpg",
+  "estado": true,
+  "fecha Nacimiento": "6 de agosto de 1881",
+  "pais": "Reino Unido",
+  "invencion": "Descubrimiento de la penicilina",
+  "frases": [
+    "Cuando he estado trabajando toda mi vida en algo y no logro destacar, me siento muy humilde."
+  ],
+  "genero": "Masculino",
+  "biografia": "Sir Alexander Fleming, nacido en el Reino Unido en 1881, fue un microbiólogo y farmacólogo conocido por su descubrimiento de la penicilina en 1928. Este descubrimiento revolucionó la medicina al introducir los antibióticos y cambiar la forma en que se tratan las infecciones. Fleming recibió el Premio Nobel de Medicina en 1945 por su trabajo en el desarrollo de antibióticos, lo que ha salvado innumerables vidas en todo el mundo."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9bb"
+  },
+  "Nombre": "Hermann Muller",
+  "imagen": "imagen_muller.jpg",
+  "imagen2": "imagen2_muller.jpg",
+  "estado": true,
+  "fecha Nacimiento": "21 de diciembre de 1890",
+  "pais": "Estados Unidos",
+  "invencion": "Mutagénesis inducida por rayos X",
+  "frases": [
+    "La genética es una ciencia peligrosa."
+  ],
+  "genero": "Masculino",
+  "biografia": "Hermann Muller, nacido en Estados Unidos en 1890, fue un genetista y biólogo que realizó investigaciones fundamentales sobre la genética de las moscas de la fruta. En 1946, fue galardonado con el Premio Nobel de Fisiología o Medicina por su descubrimiento de que los rayos X pueden inducir mutaciones en los genes. Su trabajo en mutagénesis y genética contribuyó significativamente a nuestra comprensión de la herencia genética y la evolución."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9bc"
+  },
+  "Nombre": "Aleksandr Solzhenitsyn",
+  "imagen": "imagen_solzhenitsyn.jpg",
+  "imagen2": "imagen2_solzhenitsyn.jpg",
+  "estado": true,
+  "fecha Nacimiento": "11 de diciembre de 1918",
+  "pais": "Rusia",
+  "invencion": "Denunciante del sistema de gulags soviético",
+  "frases": [
+    "El arte puede hacer que una revolución sea."
+  ],
+  "genero": "Masculino",
+  "biografia": "Aleksandr Solzhenitsyn, nacido en Rusia en 1918, fue un escritor y disidente conocido por su denuncia del sistema de gulags soviético. Su obra más famosa, 'Archipiélago Gulag', reveló los horrores de los campos de prisioneros en la Unión Soviética. A pesar de enfrentar la censura y la persecución, Solzhenitsyn continuó escribiendo y abogando por la libertad de expresión. En 1970, ganó el Premio Nobel de Literatura por su valiente trabajo en la denuncia de las injusticias en la URSS."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9bd"
+  },
+  "Nombre": "Comité internacional de la Cruz Roja",
+  "imagen": "imagen_cruz_roja.jpg",
+  "imagen2": "imagen2_cruz_roja.jpg",
+  "estado": true,
+  "fundacion": "17 de febrero de 1863",
+  "pais": "Suiza",
+  "invencion": "Asistencia humanitaria en conflictos armados",
+  "frases": [
+    "Humanidad, imparcialidad, neutralidad, independencia, voluntariado, unidad y universalidad."
+  ],
+  "genero": "Organización",
+  "biografia": "El Comité Internacional de la Cruz Roja (CICR) fue fundado en Suiza en 1863 por Henry Dunant y Gustave Moynier. El CICR se ha dedicado a proporcionar asistencia humanitaria en conflictos armados y desastres naturales en todo el mundo. Su trabajo se basa en los principios de humanidad, imparcialidad, neutralidad, independencia, voluntariado, unidad y universalidad. El CICR ha recibido el Premio Nobel de la Paz tres veces en su historia, en 1917, 1944 y 1963, en reconocimiento a su importante labor en la protección y asistencia de las víctimas de conflictos."
+},{
+  "_id": {
+    "$oid": "651c4f6d4cfab6af1b32f9be"
+  },
+  "Nombre": "Nelson Mandela",
+  "imagen": "imagen_mandela.jpg",
+  "imagen2": "imagen2_mandela.jpg",
+  "estado": true,
+  "fecha Nacimiento": "18 de julio de 1918",
+  "pais": "Sudáfrica",
+  "invencion": "Lucha contra el apartheid",
+  "frases": [
+    "Nadie nace odiando a otra persona por el color de su piel, su origen o su religión. La gente debe aprender a odiar, y si pueden aprender a odiar, se les puede enseñar a amar."
+  ],
+  "genero": "Masculino",
+  "biografia": "Nelson Mandela, nacido en Sudáfrica en 1918, fue un líder en la lucha contra el apartheid en Sudáfrica. Pasó 27 años en prisión por su oposición al régimen segregacionista, pero finalmente fue liberado en 1990. Mandela se convirtió en el primer presidente negro de Sudáfrica en 1994, marcando el fin oficial del apartheid. Ganó el Premio Nobel de la Paz en 1993 por su contribución a la reconciliación y la construcción de una nueva Sudáfrica basada en la igualdad y la justicia."
+}]
