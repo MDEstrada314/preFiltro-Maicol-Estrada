@@ -10,11 +10,12 @@ import Footer from "../../components/footer/footer.jsx";
 // sections for this page
 
 import CallToAction from "../../components/call-to-action/CallToAction"
+import PageForm from "./sections/form.jsx";
 
 
 const Components = () => {
     const [data, setData] = useState([]);
-    const apiUrl = "http://localhost:9000/nobel"; // Actualiza la URL de la API
+    const apiUrl = "http://localhost:9000/api"; // Actualiza la URL de la API
   
     useEffect(() => {
       fetch(apiUrl)
@@ -25,7 +26,7 @@ const Components = () => {
           return response.json();
         })
         .then((data) => {
-          setData(data.alquiler);
+          setData(data);
           console.log(data.alquiler[0]._id);
         })
         .catch((error) => {
@@ -42,10 +43,10 @@ const Components = () => {
             {data && data.length > 0 ? (
               data.map((item) => (
                 <CallToAction 
-                  llaves={item.ganador._id}
-                  backgroundImagen={item.ganador.imagen}
-                  title={item.ganador.Nombre}
-                  subtitle={item.ganador.frases[0]}
+                  llaves={item._id}
+                  backgroundImagen={item.imagen}
+                  title={item.Nombre}
+                  subtitle={item.frases[0]}
                   buttonText={item.titulo}
                 />
               ))
@@ -81,16 +82,16 @@ const Components = () => {
   import Typography from "./sections/typography.jsx";
   import JsComponents from "./sections/js-components.jsx"; */
 
-/*    /*  <Buttons /> */
-                   {/*  <Labels /> */}
-                    {/* <PagePagination /> */}
-                  {/*   <Images /> */}
-                   {/*  <Breadcrumbs /> */}
-                   {/*  <Cards /> */}
-                   {/*  <Dropdowns /> */}
-                   {/*  <PageForm /> */}
-                   {/*  <PageTable /> */}
-                    {/* <Notification /> */}
-                   {/*  <TooltipPopover /> */}
-                 {/*    <Typography /> */}
-                  /*   <JsComponents /> */
+/*    <Buttons />
+                    <Labels /> 
+                     <PagePagination /> 
+               <Images />
+                <Breadcrumbs /> 
+                    <Cards />
+                    <Dropdowns />
+                    <PageForm />
+                    <PageTable />
+                    <Notification />
+                    <TooltipPopover />
+                    <Typography />
+                  <JsComponents />  */

@@ -13,7 +13,7 @@ const GanadoresSchema = Schema({
         imagen2:{
             type:String,
             required:false,
-            default:'defauld.jpg',
+            default:'def.jpg',
         } ,
         estado:{
             type:Boolean,
@@ -21,7 +21,7 @@ const GanadoresSchema = Schema({
             default:true
         },
         fechaNacimiento:{
-            type:String,
+            type:Date,
             required:false
         },
         pais:{

@@ -1,4 +1,5 @@
 const Nobels = require('../models/Nobel.js');
+
 /* const bcryptjs = require('bcryptjs'); */
 
 /* const getNobels = async (req, res)=>{
@@ -23,7 +24,6 @@ const getNobels = async (req, res) => {
         res.status(500).json({ error: 'Not Found :C'});
       };
 };
-
 
 
 

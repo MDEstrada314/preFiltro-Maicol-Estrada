@@ -7,7 +7,7 @@ import Footer from "../../components/footer/footer.jsx";
 
 // Sections for this page
 import BannerComponent from "./sections/bannercomponent.jsx";
-import ContactComponent from "./sections/contactcomponent.jsx";
+/* import ContactComponent from "./sections/contactcomponent.jsx"; */
 
 const CardNobel = () => {
     
@@ -34,7 +34,7 @@ const CardNobel = () => {
                 <div className="container-fluid">
                     {data.Nombre ? (
                         <BannerComponent
-                            key={data._id}
+                            llave={data._id}
                             title={data.Nombre}
                             bigrafia={data.biografia}
                             subtitle={data.frases[0]}

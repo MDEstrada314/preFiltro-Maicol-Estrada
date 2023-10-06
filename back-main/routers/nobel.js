@@ -1,5 +1,5 @@
 const {Router} = require('express');
-const getNobels = require('../controller/nobel.controller.js');
+const getNobels = require('../controller/nobel.controller');
 
 
 const router = Router();

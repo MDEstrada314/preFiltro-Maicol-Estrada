@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Routes, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import {
   Row,
   Col,
@@ -11,7 +11,30 @@ import {
   Button,
 } from "reactstrap";
 
+
 const ContactComponent = () => {
+
+  const [paises, setPaises] = useState([]);
+  const apiUrl = `http://localhost:9000/pais`; 
+
+  useEffect(() => {
+      fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        setPaises(data)
+          console.log(data[0].nombre);
+      })
+      .catch((error) => {
+          console.error('Error al obtener datos de la API:', error);
+      });
+  }, [apiUrl]);
+
+
+
+
+
+
+
   const margin = {
     marginTop: "10rem",
   };
@@ -79,38 +102,48 @@ const ContactComponent = () => {
                         </Col>
                         <Col lg="6">
                           <FormGroup className="m-t-15">
-                            <Input type="text" placeholder="fecha Nacimiento"
-                                 onChange={(e) => setfechaNacimiento(e.target.value)} />
+                            <Input type="date" placeholder="fecha Nacimiento"
+                              onChange={(e) => setfechaNacimiento(e.target.value)} />
                           </FormGroup>
                         </Col>
+
                         <Col lg="6">
-                          <FormGroup className="m-t-15">
-                            <Input type="text" placeholder="Pais"
-                             onChange={(e) => setPais(e.target.value)} />
-                           
-                          </FormGroup>
-                        </Col>
+                            <FormGroup className="m-t-15">
+                              <Input
+                                type="select"
+                                value={pais}
+                                onChange={(e) => setPais(e.target.value)}
+                              >
+                                <option value="">Selecciona un país</option>
+                                {paises.map((paisItem) => (
+                                  <option key={paisItem.id} value={paisItem.id}>
+                                    {paisItem.nombre}
+                                  </option>
+                                ))}
+                              </Input>
+                            </FormGroup>
+                          </Col>
+
                         <Col lg="6">
                           <FormGroup className="m-t-15">
                             <Input type="text" placeholder="invencion"
-                               onChange={(e) => setInvencion(e.target.value)}/>
-                         
+                              onChange={(e) => setInvencion(e.target.value)}/>
+
                           </FormGroup>
                         </Col>
                         <Col lg="6">
                           <FormGroup className="m-t-15">
                             <Input type="text" placeholder="Fraces"
-                             onChange={(e) => setFrases(e.target.value)}
+                              onChange={(e) => setFrases(e.target.value)}
                             
                             />
-                           
+
                           </FormGroup>
                         </Col>
                         <Col lg="6">
                           <FormGroup className="m-t-15">
                             <Input type="text" placeholder="Genero"
-                             onChange={(e) => setGenero(e.target.value)}/>
-                           
+                              onChange={(e) => setGenero(e.target.value)}/>
                           </FormGroup>
                         </Col>
                         <Col lg="12">

@@ -1,0 +1,87 @@
+[
+  {
+    "nombre": "Estados Unidos",
+    "cantidadPremiosNobel": 383
+  },
+  {
+    "nombre": "Reino Unido",
+    "cantidadPremiosNobel": 137
+  },
+  {
+    "nombre": "Alemania",
+    "cantidadPremiosNobel": 107
+  },
+  {
+    "nombre": "Francia",
+    "cantidadPremiosNobel": 70
+  },
+  {
+    "nombre": "Suecia",
+    "cantidadPremiosNobel": 32
+  },
+  {
+    "nombre": "Japón",
+    "cantidadPremiosNobel": 28
+  },
+  {
+    "nombre": "Canadá",
+    "cantidadPremiosNobel": 27
+  },
+  {
+    "nombre": "Italia",
+    "cantidadPremiosNobel": 27
+  },
+  {
+    "nombre": "Rusia",
+    "cantidadPremiosNobel": 23
+  },
+  {
+    "nombre": "Suiza",
+    "cantidadPremiosNobel": 25
+  },
+  {
+    "nombre": "Australia",
+    "cantidadPremiosNobel": 15
+  },
+  {
+    "nombre": "Noruega",
+    "cantidadPremiosNobel": 14
+  },
+  {
+    "nombre": "Países Bajos",
+    "cantidadPremiosNobel": 12
+  },
+  {
+    "nombre": "India",
+    "cantidadPremiosNobel": 12
+  },
+  {
+    "nombre": "China",
+    "cantidadPremiosNobel": 11
+  },
+  {
+    "nombre": "Israel",
+    "cantidadPremiosNobel": 12
+  },
+  {
+    "nombre": "Dinamarca",
+    "cantidadPremiosNobel": 14
+  },
+  {
+    "nombre": "Austria",
+    "cantidadPremiosNobel": 21
+  },
+  {
+    "nombre": "Irlanda",
+    "cantidadPremiosNobel": 7
+  },
+  {
+    "nombre": "Egipto",
+    "cantidadPremiosNobel": 5
+  },
+  {
+    "nombre": "Brasil",
+    "cantidadPremiosNobel": 3
+  }
+ 
+]
