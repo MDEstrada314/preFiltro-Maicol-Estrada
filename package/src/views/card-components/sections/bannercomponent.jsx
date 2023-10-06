@@ -43,18 +43,8 @@ const BannerComponent = ({title, bigrafia,invesion,backgroundImagen } ) => {
                     </Row>
                 </Container>
             </div>
-            <div className="static-slider3">
-                <Container>
-                    <Row className="justify-content-center">
-                        <Col md="8" className="align-self-center text-center">
-                            <h1 className="title">I’m Johanthan Doe, an <b className="font-bold">Entreprenuer, Designer & Front-end Developer</b>, Making <span className="text-success-gradiant font-bold typewrite" data-period="2000" data-type='[ "Photoshop", "Web Application", "Web Designing", "Web Development" ]'></span></h1>
-                            <a className="btn btn-success-gradiant btn-md btn-arrow m-t-20" data-toggle="collapse" href=""><span>Checkout My Work <i className="ti-arrow-right"></i></span></a>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
         </div>
-    );
+    );  
 }
 
 export default BannerComponent;

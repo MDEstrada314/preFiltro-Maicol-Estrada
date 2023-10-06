@@ -7,8 +7,19 @@ const GanadoresSchema = Schema({
         },
         imagen:{
             type:String,
-            required:false
+            required:false,
+            default:'defauld.jpg',
         } ,
+        imagen2:{
+            type:String,
+            required:false,
+            default:'defauld.jpg',
+        } ,
+        estado:{
+            type:Boolean,
+            required:false,
+            default:true
+        },
         fechaNacimiento:{
             type:Date,
             required:true

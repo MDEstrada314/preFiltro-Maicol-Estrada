@@ -3,12 +3,12 @@ import { Container, Row, Col } from 'reactstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-const CallToAction = ({ backgroundImagen, title, subtitle, key }) => {
+const CallToAction = ({ backgroundImagen, title, subtitle, llaves }) => {
     const [backgroundImage, setBackgroundImage] = useState(null);
-    console.log(key);
+    console.log(llaves);
 
     function llave(){
-        localStorage.setItem('ID',key)
+        localStorage.setItem('ID',llaves)
     
     }
 

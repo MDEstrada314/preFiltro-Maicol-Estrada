@@ -10,13 +10,19 @@ import {
 } from "reactstrap";
 
 const ContactComponent = () => {
+  const margin = {
+    marginTop: "10rem",
+  }
+
+
+
   return (
     <div>
-      <div className="spacer bg-light">
+      <div className="spacer bg-light" style={margin} >
         <Container>
           <Row className="justify-content-center">
             <Col md="7" className="text-center">
-              <h1 className="title font-bold">Contact Form</h1>
+              <h1 className="title font-bold">Agregar Nuevo Ganador</h1>
               <h6 className="subtitle">
                 Here you can check Demos we created based on WrapKit. Its quite
                 easy to Create your own dream website &amp; dashboard in

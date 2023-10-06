@@ -13,7 +13,8 @@ const CardNobel = () => {
     
 
     const [data, setData] = useState({});
-    const apiUrl = 'http://localhost:9000/api/651c4f6d4cfab6af1b32f9b5'; 
+    const datoId= localStorage.getItem('ID')
+    const apiUrl = `http://localhost:9000/api/${datoId}`; 
 
     useEffect(() => {
         fetch(apiUrl)

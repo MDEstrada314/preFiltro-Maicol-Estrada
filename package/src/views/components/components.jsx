@@ -41,8 +41,8 @@ const Components = () => {
             <HeaderBanner />
             {data && data.length > 0 ? (
               data.map((item) => (
-                <CallToAction
-                  key={item._id}
+                <CallToAction 
+                  llaves={item.ganador._id}
                   backgroundImagen={item.ganador.imagen}
                   title={item.ganador.Nombre}
                   subtitle={item.ganador.frases[0]}
