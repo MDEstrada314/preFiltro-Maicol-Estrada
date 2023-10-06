@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import { Routes, useNavigate } from "react-router-dom";
 import {
   Row,
   Col,
@@ -12,7 +14,33 @@ import {
 const ContactComponent = () => {
   const margin = {
     marginTop: "10rem",
-  }
+  };
+  let navigate = useNavigate();
+  const [Nombre, setFisrsName] = useState("");
+  const [fechaNacimiento, setfechaNacimiento] = useState("");
+  const [pais, setPais] = useState("");
+  const [invencion, setInvencion] = useState("");
+  const [frases, setFrases] = useState("");
+  const [genero, setGenero] = useState("");
+  const [biografia, setbiografia] = useState("");
+
+  const postApiData = () => {
+    axios.post(`http://localhost:9000/api`, {
+      Nombre,
+      fechaNacimiento,
+      pais,
+      invencion,
+      frases,
+      genero,
+      biografia,
+    })
+    .then(() => {
+      navigate("/");
+    })
+    .catch(error => {
+      console.error("Error en la solicitud:", error);
+    });
+  };
 
 
 
@@ -39,17 +67,50 @@ const ContactComponent = () => {
               <Row className="m-0">
                 <Col lg="8">
                   <div className="contact-box p-r-40">
-                    <h4 className="title">Quick Contact</h4>
+                    <h4 className="title">Nuevo Ganador</h4>
                     <Form>
                       <Row>
                         <Col lg="6">
                           <FormGroup className="m-t-15">
-                            <Input type="text" placeholder="name" />
+                            <Input type="text" placeholder="Nombre" 
+                              onChange={(e) => setFisrsName(e.target.value)}
+                            />
+                          </FormGroup>  
+                        </Col>
+                        <Col lg="6">
+                          <FormGroup className="m-t-15">
+                            <Input type="text" placeholder="fecha Nacimiento"
+                                 onChange={(e) => setfechaNacimiento(e.target.value)} />
                           </FormGroup>
                         </Col>
                         <Col lg="6">
                           <FormGroup className="m-t-15">
-                            <Input type="text" placeholder="email" />
+                            <Input type="text" placeholder="Pais"
+                             onChange={(e) => setPais(e.target.value)} />
+                           
+                          </FormGroup>
+                        </Col>
+                        <Col lg="6">
+                          <FormGroup className="m-t-15">
+                            <Input type="text" placeholder="invencion"
+                               onChange={(e) => setInvencion(e.target.value)}/>
+                         
+                          </FormGroup>
+                        </Col>
+                        <Col lg="6">
+                          <FormGroup className="m-t-15">
+                            <Input type="text" placeholder="Fraces"
+                             onChange={(e) => setFrases(e.target.value)}
+                            
+                            />
+                           
+                          </FormGroup>
+                        </Col>
+                        <Col lg="6">
+                          <FormGroup className="m-t-15">
+                            <Input type="text" placeholder="Genero"
+                             onChange={(e) => setGenero(e.target.value)}/>
+                           
                           </FormGroup>
                         </Col>
                         <Col lg="12">
@@ -57,7 +118,9 @@ const ContactComponent = () => {
                             <Input
                               type="textarea"
                               name="text"
-                              placeholder="message"
+                              placeholder="Biografia"
+                              onChange={(e) => setbiografia(e.target.value)}
+
                             />
                           </FormGroup>
                         </Col>
@@ -65,6 +128,7 @@ const ContactComponent = () => {
                           <Button
                             type="submit"
                             className="btn btn-danger-gradiant m-t-20 btn-arrow"
+                            onClick={postApiData}
                           >
                             <span>
                               {" "}

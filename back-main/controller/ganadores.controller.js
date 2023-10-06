@@ -22,7 +22,7 @@ const getnobel= async (req,res) =>{
 }
 
 
-const postInventores = async (req, res) => {
+const postGanadores= async (req, res) => {
     try {
         const newInventor = new ganadores(req.body); // Crea una nueva instancia del modelo con los datos del cuerpo de la solicitud
         await newInventor.save(); // Guarda el nuevo inventor en la base de datos
@@ -68,7 +68,7 @@ const postInventores = async (req, res) => {
 
 module.exports = {
     getInventores,
-    postInventores,
+    postGanadores,
     deleteInventiores,
     putInventiores,
     getnobel

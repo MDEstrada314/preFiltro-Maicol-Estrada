@@ -3,10 +3,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9b5"
   },
   "Nombre": "Marie Curie",
-  "imagen": "imagen_curie.jpg",
-  "imagen2": "imagen2_curie.jpg",
+  "imagen": "1.jpg",
+  "imagen2": "img1.jpg",
   "estado": true,
-  "fecha Nacimiento": "7 de noviembre de 1867",
+  "fechaNacimiento": "7 de noviembre de 1867",
   "pais": "Polonia",
   "invencion": "Radiactividad",
   "frases": [
@@ -19,10 +19,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9b6"
   },
   "Nombre": "Martin Luther King Jr.",
-  "imagen": "imagen_king.jpg",
-  "imagen2": "imagen2_king.jpg",
+  "imagen": "2.jpg",
+  "imagen2": "img2.jpg",
   "estado": true,
-  "fecha Nacimiento": "15 de enero de 1929",
+  "fechaNacimiento": "15 de enero de 1929",
   "pais": "Estados Unidos",
   "invencion": "Movimiento por los derechos civiles",
   "frases": [
@@ -35,10 +35,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9b7"
   },
   "Nombre": "Albert Einstein",
-  "imagen": "imagen_einstein.jpg",
-  "imagen2": "imagen2_einstein.jpg",
+  "imagen": "3.jpg",
+  "imagen2": "img3.jpg",
   "estado": true,
-  "fecha Nacimiento": "14 de marzo de 1879",
+  "fechaNacimiento": "14 de marzo de 1879",
   "pais": "Alemania",
   "invencion": "Teoría de la relatividad",
   "frases": [
@@ -52,10 +52,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9b8"
   },
   "Nombre": "Francis Crick, James Watson y Maurice Wilkins",
-  "imagen": "imagen_crick_watson_wilkins.jpg",
-  "imagen2": "imagen2_crick_watson_wilkins.jpg",
+  "imagen": "4.jpg",
+  "imagen2": "img4.jpg",
   "estado": true,
-  "fecha Nacimiento": "8 de junio de 1916, 6 de abril de 1928 y 15 de diciembre de 1916",
+  "fechaNacimiento": "8 de junio de 1916, 6 de abril de 1928 y 15 de diciembre de 1916",
   "pais": "Reino Unido",
   "invencion": "Descubrimiento de la estructura del ADN",
   "frases": [
@@ -68,10 +68,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9b9"
   },
   "Nombre": "Jean-Paul Sartre",
-  "imagen": "imagen_sartre.jpg",
-  "imagen2": "imagen2_sartre.jpg",
+  "imagen": "5.jpg",
+  "imagen2": "img5.jpg",
   "estado": true,
-  "fecha Nacimiento": "21 de junio de 1905",
+  "fechaNacimiento": "21 de junio de 1905",
   "pais": "Francia",
   "invencion": "Existencialismo",
   "frases": [
@@ -84,10 +84,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9ba"
   },
   "Nombre": "Sir Alexander Fleming",
-  "imagen": "imagen_fleming.jpg",
-  "imagen2": "imagen2_fleming.jpg",
+  "imagen": "6.jpg",
+  "imagen2": "img6.jpg",
   "estado": true,
-  "fecha Nacimiento": "6 de agosto de 1881",
+  "fechaNacimiento": "6 de agosto de 1881",
   "pais": "Reino Unido",
   "invencion": "Descubrimiento de la penicilina",
   "frases": [
@@ -100,10 +100,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9bb"
   },
   "Nombre": "Hermann Muller",
-  "imagen": "imagen_muller.jpg",
-  "imagen2": "imagen2_muller.jpg",
+  "imagen": "7.jpg",
+  "imagen2": "img7.jpg",
   "estado": true,
-  "fecha Nacimiento": "21 de diciembre de 1890",
+  "fechaNacimiento": "21 de diciembre de 1890",
   "pais": "Estados Unidos",
   "invencion": "Mutagénesis inducida por rayos X",
   "frases": [
@@ -116,10 +116,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9bc"
   },
   "Nombre": "Aleksandr Solzhenitsyn",
-  "imagen": "imagen_solzhenitsyn.jpg",
-  "imagen2": "imagen2_solzhenitsyn.jpg",
+  "imagen": "8.jpg",
+  "imagen2": "img8.jpg",
   "estado": true,
-  "fecha Nacimiento": "11 de diciembre de 1918",
+  "fechaNacimiento": "11 de diciembre de 1918",
   "pais": "Rusia",
   "invencion": "Denunciante del sistema de gulags soviético",
   "frases": [
@@ -132,8 +132,8 @@
     "$oid": "651c4f6d4cfab6af1b32f9bd"
   },
   "Nombre": "Comité internacional de la Cruz Roja",
-  "imagen": "imagen_cruz_roja.jpg",
-  "imagen2": "imagen2_cruz_roja.jpg",
+  "imagen": "9.jpg",
+  "imagen2": "img9.jpg",
   "estado": true,
   "fundacion": "17 de febrero de 1863",
   "pais": "Suiza",
@@ -148,10 +148,10 @@
     "$oid": "651c4f6d4cfab6af1b32f9be"
   },
   "Nombre": "Nelson Mandela",
-  "imagen": "imagen_mandela.jpg",
-  "imagen2": "imagen2_mandela.jpg",
+  "imagen": "10.jpg",
+  "imagen2": "img10.jpg",
   "estado": true,
-  "fecha Nacimiento": "18 de julio de 1918",
+  "fechaNacimiento": "18 de julio de 1918",
   "pais": "Sudáfrica",
   "invencion": "Lucha contra el apartheid",
   "frases": [

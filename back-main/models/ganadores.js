@@ -1,7 +1,7 @@
 const {Schema, model} = require('mongoose');
 
 const GanadoresSchema = Schema({
-        nombre: {
+        Nombre: {
             type:String,
             required:true
         },
@@ -21,23 +21,30 @@ const GanadoresSchema = Schema({
             default:true
         },
         fechaNacimiento:{
-            type:Date,
-            required:true
+            type:String,
+            required:false
         },
         pais:{
-            type: Schema.Types.ObjectId,
-            ref: 'Pais',
-            required: true
+            type:String,
+            required: false
         },
         invencion:{
             type:String,
             required:true
         },
-        genero:{
-            type: Schema.Types.ObjectId,
-            ref: 'Generos',
-            required: true
+        frases:{
+            type:Array,
+            required:false
+
         },
+        genero:{
+            type:String,
+            required: false
+        },
+        biografia:{
+            type:String,
+            required:false
+        }
 
       
 
