@@ -14,7 +14,7 @@ const Nobels = require('../models/Nobel.js');
 const getNobels = async (req, res) => {
     try {
         const data = await Nobels.find()
-        .populate('ganador', 'Nombre imagen frases -_id')
+        .populate('ganador', 'Nombre imagen frases _id')
 
         res.json({
             alquiler: data

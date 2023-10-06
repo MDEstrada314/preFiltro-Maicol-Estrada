@@ -3,8 +3,17 @@ import { Container, Row, Col } from 'reactstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-const CallToAction = ({ backgroundImagen, title, subtitle }) => {
+const CallToAction = ({ backgroundImagen, title, subtitle, key }) => {
     const [backgroundImage, setBackgroundImage] = useState(null);
+    console.log(key);
+
+    function llave(){
+        localStorage.setItem('ID',key)
+    
+    }
+
+
+
 
     useEffect(() => {
         const loadBackgroundImage = async () => {
@@ -32,7 +41,7 @@ const CallToAction = ({ backgroundImagen, title, subtitle }) => {
                             <div>
                                 <h2 className="title text-white font-weight-bold">{title}</h2>
                                 <h6 className="subtitle font-light text-white">{subtitle}</h6>
-                                <Link to="/card-components"   className="btn btn-outline-light m-r-20 btn-md m-t-30 font-14">
+                                <Link to="/card-components" onClick={()=>{llave()}}  className="btn btn-outline-light m-r-20 btn-md m-t-30 font-14">
                                     Detalles
                                 </Link>
                             </div>

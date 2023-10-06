@@ -10,6 +10,8 @@ import BannerComponent from "./sections/bannercomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 
 const CardNobel = () => {
+    
+
     const [data, setData] = useState({});
     const apiUrl = 'http://localhost:9000/api/651c4f6d4cfab6af1b32f9b5'; 
 
