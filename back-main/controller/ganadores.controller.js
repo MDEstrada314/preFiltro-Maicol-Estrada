@@ -1,81 +1,78 @@
 const ganadores = require('../models/ganadores.js');
 
-/* const bcryptjs = require('bcryptjs'); */
-
 /**
  * @swagger
  * components:
  *  schemas:
  *     Ganador:
- *          type: object
- *          properties:
- *                Nombre:
- *                  type: string
- *                  description: "Nombre del ganador"
- *                imagen:
- *                  type: String
- *                  description: "Ruta de la imagen del ganador"
- *                imagen2:
- *                  type: String
- *                  description: "ruta de la segunda iamgen de carga detalle"
- *                estado:
- *                  type: Boolean
- *                  description: "Estado del ganador (activo/inactivo)"
- *                fechaNacimiento:
- *                   type: Date
- *                   description: "Fecha de nacimiento del ganador"
- *                pais:
- *                   type: String
- *                   description: "País de origen del ganador"
- *                invencion:
- *                   type: String
- *                   description: "Invento o logro por el cual el ganador es conocido"
- *                frases:
- *                   type: Array
- *                   description: "Frases famosas del ganador (si las hay)"
- *                genero: 
- *                   type: String
- *                   description: "Género o categoría del logro del ganador"
- *                biografia:
- *                   type: String
- *                   description: "Biografía o descripción del ganador"
- *          required:
- *              -Nombre
- *              -invencion
- *          example:
- *              Nombre: machado
- *              imagen: machado.jpg
- *              imagen2: machado2.jpg
- *              estado: true
- *              fechaNacimiento: 1997-12-07
- *              pais: colombia
- *              invecion: la paz
- *              frases: la libertad se logra justos
- *              genero: masculino
- *              biografia: una exelete persona
- *                  
+ *       type: object
+ *       properties:
+ *         Nombre:
+ *           type: string
+ *           description: "Nombre del ganador"
+ *         imagen:
+ *           type: string
+ *           description: "Ruta de la imagen del ganador"
+ *         imagen2:
+ *           type: string
+ *           description: "Ruta de la segunda imagen de carga detalle"
+ *         estado:
+ *           type: boolean
+ *           description: "Estado del ganador (activo/inactivo)"
+ *         fechaNacimiento:
+ *           type: string
+ *           format: date
+ *           description: "Fecha de nacimiento del ganador (formato YYYY-MM-DD)"
+ *         pais:
+ *           type: string
+ *           description: "País de origen del ganador"
+ *         invencion:
+ *           type: string
+ *           description: "Invento o logro por el cual el ganador es conocido"
+ *         frases:
+ *           type: array
+ *           items:
+ *             type: string
+ *           description: "Frases famosas del ganador (si las hay)"
+ *         genero:
+ *           type: string
+ *           description: "Género o categoría del logro del ganador"
+ *         biografia:
+ *           type: string
+ *           description: "Biografía o descripción del ganador"
+ *       required:
+ *         - Nombre
+ *         - invencion
+ *       example:
+ *         Nombre: machado
+ *         imagen: machado.jpg
+ *         imagen2: machado2.jpg
+ *         estado: true
+ *         fechaNacimiento: 1997-12-07
+ *         pais: colombia
+ *         invencion: la paz
+ *         frases:
+ *           - "La libertad se logra con justicia"
+ *         genero: masculino
+ *         biografia: Una excelente persona
  */
 
 /**
  * @swagger
- * /api/:
- * post:
- *  summary: crear a un nuevo ganador del nobel
- *  tags: [Ganador]
- *  requestBody:
- *      requiered: true
- *      content:
- *          application/json:
- *              schema:
- *                  type: object
- *                  $ref: '#/components/schemas/Ganador'
- *  responses:
- *      200:
- *        description: nuevo ganador registrado
- *                  
+ * /api/ganadores:
+ *   get:
+ *     summary: Obtener la lista de ganadores del Nobel.
+ *     tags: [Ganador]
+ *     responses:
+ *       200:
+ *         description: Éxito, devuelve una lista de ganadores.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Ganador'
  */
-
-
 
 const getInventores = async (req, res)=>{
     try {
@@ -87,7 +84,6 @@ const getInventores = async (req, res)=>{
     } 
 }
 
-
 const getnobel= async (req,res) =>{
     try {
         const ganador = await ganadores.findOne({_id:req.params.id})
@@ -97,7 +93,26 @@ const getnobel= async (req,res) =>{
     }
 }
 
-
+/**
+ * @swagger
+ * /api/ganadores:
+ *   post:
+ *     summary: Crear un nuevo ganador del Nobel
+ *     tags: [Ganador]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Ganador'
+ *     responses:
+ *       201:
+ *         description: Nuevo ganador registrado
+ *       400:
+ *         description: Datos de entrada no válidos
+ *       500:
+ *         description: Error interno del servidor
+ */
 const postGanadores= async (req, res) => {
     try {
         const newInventor = new ganadores(req.body); // Crea una nueva instancia del modelo con los datos del cuerpo de la solicitud
@@ -115,32 +130,80 @@ const postGanadores= async (req, res) => {
     }
 };
 
-    const deleteGanadores = async (req, res) => {
-        const { id } = req.params;
-    
-        try {
-        const invetor = await ganadores.findByIdAndRemove(id);
-    
-        if (!invetor) {
+/**
+ * @swagger
+ * /api/ganadores/{id}:
+ *   delete:
+ *     summary: Eliminar a un ganador del Nobel por ID
+ *     tags: [Ganador]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID del ganador a eliminar
+ *     responses:
+ *       200:
+ *         description: Ganador eliminado correctamente
+ *       404:
+ *         description: Ganador no encontrado
+ *       500:
+ *         description: Error interno del servidor
+ */
+const deleteGanadores = async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const inventor = await ganadores.findByIdAndRemove(id);
+
+        if (!inventor) {
             return res.status(404).json({ message: 'Inventor no encontrado' });
         }
-    
+
         res.json({ message: 'Inventor eliminado correctamente' });
-        } catch (error) {
+    } catch (error) {
         console.error('Error al eliminar Inventor:', error);
         res.status(500).json({ error: 'Error al eliminar Inventor.' });
-        }
-    };
-
-    const putInventiores = async (req, res)=>{
-        const { id } = req.params;
-        const { nombre,  ...resto } = req.body;
-        const invetor = await ganadores.findByIdAndUpdate(id, {nombre, resto}, {new:true});
-        res.json({
-            msg:"Inventor Actualizado",
-            invetor : invetor
-        });
     }
+};
+
+/**
+ * @swagger
+ * /api/ganadores/{id}:
+ *   put:
+ *     summary: Actualizar un ganador del Nobel por ID
+ *     tags: [Ganador]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: ID del ganador a actualizar
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Ganador'
+ *     responses:
+ *       200:
+ *         description: Ganador actualizado correctamente
+ *       404:
+ *         description: Ganador no encontrado
+ *       500:
+ *         description: Error interno del servidor
+ */
+const putInventiores = async (req, res)=>{
+    const { id } = req.params;
+    const { nombre,  ...resto } = req.body;
+    const inventor = await ganadores.findByIdAndUpdate(id, {nombre, ...resto}, {new:true});
+    res.json({
+        msg:"Inventor Actualizado",
+        inventor : inventor
+    });
+}
 
 module.exports = {
     getInventores,
@@ -148,5 +211,4 @@ module.exports = {
     deleteGanadores,
     putInventiores,
     getnobel
-   
 }

@@ -5,30 +5,39 @@ const path = require ("path")
 
 const swaggerUI = require("swagger-ui-express")
 const swaggerJsDoc = require("swagger-jsdoc")
-const swgaerSpec = {
-    definition:{
-        openapi:"3.0.0",
-        info:{
-            title:"MOONGO DB API",
-            version:"1.0.0"
+const swaggerSpec = {
+    definition: {
+        openapi: "3.0.0",
+        info: {
+            title: "MOONGO DB API",
+            version: "1.0.0"
         },
-        servers:[
+        servers: [
             {
-                url:"http://localhost:9000"
+                url: "http://localhost:9000"
             }
         ]
     },
-    apis:[`${path.join(__dirname,"../controller/ganadores.controller.js")}`]
-}
+    // Define todas tus rutas en el mismo arreglo 'apis'
+    apis: [
+        `${path.join(__dirname, "../controller/ganadores.controller.js")}`,
+        `${path.join(__dirname, "../controller/paises.controller.js")}`,
+        `${path.join(__dirname, "../controller/nobel.controller.js")}`,
+        `${path.join(__dirname, "../controller/regiones.controller.js")}`,
+        `${path.join(__dirname, "../controller/generos.js")}`
+    ]
+};
 
 class Server{
     constructor(){
         this.app = express();
-        this.app.use("/api-doc", swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swgaerSpec)));
+        this.app.use("/api-doc", swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swaggerSpec)));
         this.port = process.env.PORT;
         this.auth = "/api";
         this.nobel="/nobel"
         this.pais ="/pais"
+        this.region ="/region"
+        this.genero ="/genero"
         //Conexion DB
         this.connectDB();
         //Middlewares
@@ -54,6 +63,8 @@ class Server{
         this.app.use(this.auth, require('../routers/ganadores.js'));
         this.app.use(this.nobel, require('../routers/nobel.js'));
         this.app.use(this.pais, require('../routers/paises.js'));
+        this.app.use(this.region, require('../routers/regiones.js'));
+        this.app.use(this.genero, require('../routers/generos.js'));
         
     }
 

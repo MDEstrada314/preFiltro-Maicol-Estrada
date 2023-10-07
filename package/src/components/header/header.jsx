@@ -35,7 +35,7 @@ const Header = () => {
                                 </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <Link to="/#coming" className="btn btn-success-gradiant font-14">Upgrade To Proo</Link>
+                                <Link to="http://localhost:9000/api-doc/" className="btn btn-success-gradiant font-14">swagger api-doc</Link>
                             </div>
                         </Collapse>
                     </Navbar>

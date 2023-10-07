@@ -1,124 +1,69 @@
 <!-- Heading of Template -->
 <h1>
-  <a href="https://www.wrappixel.com/templates/wrapkit-react-lite/">Wrapkit React UI Lite</a>
+  PAGINA GANADORES DEL NOBEL
 </h1>
 
+
 <!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/wrapkit-react-lite-y.jpg">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/wrapkit-react-lite-y.jpg" />
-</a>
+
+ ![](/package/src/assets/images/landingpage/Frame%201.png)
 
 <!-- Description of Template -->
 <p>
-  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  creacion de una pagina con back y fronend con node js y react
 </p>
 
-## Available Scripts
+## Diseño de plantillas
+![](/package/src/assets/images/landingpage/Frame%204.png)
 
-In the project directory, you can run:
+Maquetacion de paginas 1- 2 (formulario para pots)
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**objetivos del proyecto**
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Estamos en proceso de desarrollar una página web dedicada a la exhibición de los distinguidos ganadores del Premio Nobel a lo largo de la historia. Nuestro objetivo es crear una plataforma que brinde a todas las personas una experiencia agradable y concisa al acceder a información relevante sobre los laureados de este prestigioso premio.
 
-### `npm test`
+En esta plataforma, los visitantes podrán explorar de manera intuitiva y efectiva la lista completa de ganadores de todos los años. Además, podrán obtener información detallada sobre las razones que llevaron a cada galardonado a recibir este honor, permitiendo un entendimiento más profundo de sus logros y contribuciones al mundo.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Una de las características clave de nuestra página web será la capacidad de gestionar la lista de ganadores. Esto significa que los administradores tendrán la facilidad de registrar nuevos laureados a medida que se anuncien, así como de eliminar entradas en caso necesario. Esta funcionalidad asegurará que la información esté siempre actualizada y precisa.
 
-### `npm run build`
+En resumen, nuestro proyecto tiene como objetivo ofrecer una plataforma accesible y atractiva que sirva como recurso valioso para que cualquier persona se informe sobre los ganadores del Premio Nobel a lo largo de la historia y comprenda las razones detrás de sus logros excepcionales.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## URLs que se crearon en el back
+- Ganadores de los premios Nobel: [http://localhost:9000/api](http://localhost:9000/api)
+- Premios Nobel del año: [http://localhost:9000/nobel](http://localhost:9000/nobel)
+- API de países: [http://localhost:9000/pais](http://localhost:9000/pais)
+- API de regiones: [http://localhost:9000/region](http://localhost:9000/region)
+- API de género: [http://localhost:9000/genero](http://localhost:9000/genero)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##
 
-### `npm run eject`
+## Diseño de dela base de datos
+![](/package/src/assets/images/landingpage/Tabla.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### USO DE PLANTILLAS Y MODULOS 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Pagina Wrapkit: https://www.wrappixel.com/templates/wrapkit/#
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Tecnologías Utilizadas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" width="70" height="70" stroke="white"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="70" height="70" />
+</div>
 
-### Code Splitting
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+# 🖋️Autor
 
-### Analyzing the Bundle Size
+**Maicol David Estrada Leon**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-<!-- Resources of Template -->
-<h2>Resources</h2>
-<ul>
-<li>  
-  Live Demo: <a href="https://www.wrappixel.com/demos/ui-kit/wrapkit-react-free/" rel="nofollow">https://www.wrappixel.com/demos/ui-kit/wrapkit-react-free/</a>
-</li>
-<li>
-    Download Page: <a href="https://www.wrappixel.com/templates/wrapkit-react-lite/" rel="nofollow">
- https://www.wrappixel.com/templates/wrapkit-react-lite/</a>
-</li>
-<li>
-    <a href="https://www.wrappixel.com/templates/wrapkit/#demos" rel="nofollow">WrapKit </a>Complete UI Kit - For Website Projects
-</li>
-</ul>
-
-<!-- Licensing of Template -->
-<h2>Licensing</h2>
-<ul>
-  <li>
-    <p>Copyright 2020 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
-  </li>
-  <li>
-    <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
-  </li>
-</ul>
-
-<!-- Useful Links of Template -->
-<h2>Useful Links</h2>
-<ul>
-<li><a href="https://www.wrappixel.com" rel="nofollow">Bootstrap Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/react-templates/" rel="nofollow">React Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/" rel="nofollow">Vue Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/angular-templates/" rel="nofollow">Angular Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/free-templates/" rel="nofollow">Freebies</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/affiliate-area/" rel="nofollow">Affiliate Program</a></li>
-</ul>
-
-<!-- Social Media of Wrappixel -->
-<h2>Social Media</h2>
-<p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
-<p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
-<p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>
